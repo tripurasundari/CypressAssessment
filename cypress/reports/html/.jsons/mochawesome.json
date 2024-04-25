@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-04-24T22:37:57.001Z",
+    "end": "2024-04-24T22:39:56.364Z",
+    "duration": 119363,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "12bc1fd5-faa1-49da-91c0-5124ae95e5a1",
+      "title": "",
+      "fullFile": "cypress\\e2e\\specs\\addToCartSpec.cy.js",
+      "file": "cypress\\e2e\\specs\\addToCartSpec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d946ce44-3180-4f49-b808-e31fcc740c44",
+          "title": "Add to cart/update cart",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Tc_05_verifies  functionality of remove product from cart",
+              "fullTitle": "Add to cart/update cart Tc_05_verifies  functionality of remove product from cart",
+              "timedOut": null,
+              "duration": 40230,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\addToCartSpec.cy.js\\\\Add to cartupdate cart -- Tc_05_verifies  functionality of remove product from cart (failed).png\"\n      ],\n      [\n        \"\\\\addToCartSpec.cy.js\\\\Add to cartupdate cart -- Tc_05_verifies  functionality of remove product from cart (failed) (attempt 2).png\"\n      ],\n      [\n        \"\\\\addToCartSpec.cy.js\\\\Add to cartupdate cart -- Tc_05_verifies  functionality of remove product from cart (failed) (attempt 3).png\"\n      ]\n    ]\n  },\n  \"assets/addToCartSpec.cy.js/Add to cart/update cart -- Tc_05_verifies  functionality of remove product from cart (failed) (attempt 2).png\"\n]",
+              "code": "searchResult.verifySearchedProductName(data.fullProductName);\naddcart.addToCartNVerifyCartDetails();\naddcart.emptyCart(data.productRemovedSuccessMsg);",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 6000ms: Expected to find element: `.product-thumb`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 6000ms: Expected to find element: `.product-thumb`, but never found it.\n    at SearchResultAction.searchProduct (webpack://cypressautomation/./cypress/e2e/Pages/PageActions/SearchResultAction.js:7:35)\n    at SearchResultAction.verifySearchedProductName (webpack://cypressautomation/./cypress/e2e/Pages/PageActions/SearchResultAction.js:11:9)\n    at Context.eval (webpack://cypressautomation/./cypress/e2e/specs/addToCartSpec.cy.js:28:21)",
+                "diff": null
+              },
+              "uuid": "86c345cf-60fd-4fbe-8982-d389773fec56",
+              "parentUUID": "d946ce44-3180-4f49-b808-e31fcc740c44",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "86c345cf-60fd-4fbe-8982-d389773fec56"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 40230,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "videoOnFailOnly": true,
+        "embeddedScreenshots": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
